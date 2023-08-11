@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.mfaisalkhatri</groupId>
+    <artifactId>flutter-appium-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>flutter-appium-demo</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <appium-java-client-version>8.5.1</appium-java-client-version>
+        <testng.version>7.8.0</testng.version>
+        <appium-flutterfinder-java.version>1.0.1</appium-flutterfinder-java.version>
+        <maven.compiler.version>3.11.0</maven.compiler.version>
+        <java.release.version>17</java.release.version>
+        <maven.surefire.version>3.1.0</maven.surefire.version>
+        <maven.source.encoding>UTF-8</maven.source.encoding>
+        <suite-xml>testng.xml</suite-xml>
+        <argLine>-Dfile.encoding=UTF-8 -Xdebug -Xnoagent</argLine>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appium-java-client-version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.ashwithpoojary98</groupId>
+            <artifactId>appium_flutterfinder_java</artifactId>
+            <version>${appium-flutterfinder-java.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <release>${java.release.version}</release>
+                    <encoding>${maven.source.encoding}</encoding>
+                    <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <useSystemClassLoader>false</useSystemClassLoader>
+                    <properties>
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>false</value>
+                        </property>
+                    </properties>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suite-xml}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <argLine>${argLine}</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
