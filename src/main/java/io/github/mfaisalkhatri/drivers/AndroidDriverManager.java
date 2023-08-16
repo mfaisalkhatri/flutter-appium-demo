@@ -15,7 +15,7 @@ public class AndroidDriverManager {
 
         capabilities.setCapability("deviceName", "Pixel 6 Pro API 30");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("app", System.getProperty("user.dir") + "/src/test/resources/flutter_app/provider_shopper_faisal.apk");
+        capabilities.setCapability("app", System.getProperty("user.dir") + "/src/test/resources/flutter_app/provider_shopper_flutter_sample.apk");
         capabilities.setCapability("automationName", "Flutter");
         this.driver = new AndroidDriver(new URL("http://0.0.0.0:4723/"), capabilities);
 
