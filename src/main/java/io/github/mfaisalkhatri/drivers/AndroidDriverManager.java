@@ -2,7 +2,6 @@ package io.github.mfaisalkhatri.drivers;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -23,7 +22,7 @@ public class AndroidDriverManager {
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
-    public RemoteWebDriver get() {
+    public AndroidDriver get() {
         return this.driver;
     }
 

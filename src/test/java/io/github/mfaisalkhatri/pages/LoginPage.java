@@ -1,16 +1,15 @@
 package io.github.mfaisalkhatri.pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import io.github.ashwith.flutter.FlutterFinder;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class LoginPage {
 
-    private final RemoteWebDriver driver;
+    private final AndroidDriver driver;
     private final FlutterFinder finder;
 
-    public LoginPage(final RemoteWebDriver driver) {
+    public LoginPage(final AndroidDriver driver) {
         this.driver = driver;
         this.finder = new FlutterFinder(driver);
     }
