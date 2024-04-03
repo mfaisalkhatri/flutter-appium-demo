@@ -12,12 +12,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <appium-java-client-version>8.5.1</appium-java-client-version>
-        <testng.version>7.8.0</testng.version>
-        <appium-flutterfinder-java.version>1.0.1</appium-flutterfinder-java.version>
-        <maven.compiler.version>3.11.0</maven.compiler.version>
+        <appium-java-client-version>9.2.2</appium-java-client-version>
+        <testng.version>7.9.0</testng.version>
+        <appium-flutterfinder-java.version>1.0.7</appium-flutterfinder-java.version>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
         <java.release.version>17</java.release.version>
-        <maven.surefire.version>3.1.0</maven.surefire.version>
+        <maven.surefire.version>3.2.5</maven.surefire.version>
         <maven.source.encoding>UTF-8</maven.source.encoding>
         <suite-xml>testng.xml</suite-xml>
         <argLine>-Dfile.encoding=UTF-8 -Xdebug -Xnoagent</argLine>
