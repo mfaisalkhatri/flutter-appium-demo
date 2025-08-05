@@ -5,5 +5,5 @@
         <classes>
             <class name="io.github.mfaisalkhatri.tests.FlutterSampleAppTests"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite>
