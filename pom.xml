@@ -12,25 +12,23 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <appium-java-client-version>9.2.2</appium-java-client-version>
-        <testng.version>7.9.0</testng.version>
-        <appium-flutterfinder-java.version>1.0.7</appium-flutterfinder-java.version>
-        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <appium-java-client-version>9.5.0</appium-java-client-version>
+        <testng.version>7.11.0</testng.version>
+        <appium-flutterfinder-java.version>1.0.10</appium-flutterfinder-java.version>
+        <maven.compiler.version>3.14.0</maven.compiler.version>
         <java.release.version>17</java.release.version>
-        <maven.surefire.version>3.2.5</maven.surefire.version>
+        <maven.surefire.version>3.5.3</maven.surefire.version>
         <maven.source.encoding>UTF-8</maven.source.encoding>
         <suite-xml>testng.xml</suite-xml>
         <argLine>-Dfile.encoding=UTF-8 -Xdebug -Xnoagent</argLine>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>${appium-java-client-version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -83,5 +81,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
