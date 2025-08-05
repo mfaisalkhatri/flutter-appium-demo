@@ -1,5 +1,3 @@
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-
 ## Don't forget to give a :star: to make the project popular.
 
 ## :question: What is this Repository about?
@@ -37,7 +35,7 @@
 - [How to Choose Mobile Devices for Testing](https://medium.com/@iamfaisalkhatri/how-to-choose-mobile-devices-for-testing-pcloudy-blog-96179529d0f3)
 - [What is an Android Emulator? How to Start and use it?](https://medium.com/@iamfaisalkhatri/what-is-an-android-emulator-how-to-start-and-use-it-66fdcf52be7e)
 - [How to start Appium Server Programmatically?](https://medium.com/@iamfaisalkhatri/how-to-start-appium-server-programmatically-ec07292ab59)
-- [Guide to Mobile Testing](https://medium.com/@iamfaisalkhatri/guide-to-mobile-testing-d0dd2d9b59f1)
+- [Practical Guide to Mobile Testing](https://medium.com/@iamfaisalkhatri/guide-to-mobile-testing-d0dd2d9b59f1)
 
 ## :question: Need Assistance?
 
@@ -50,4 +48,4 @@
 Contact me for Paid trainings related to Test Automation and Software Testing,
 mail me @ `mohammadfaisalkhatri@gmail.com` or ping me on [LinkedIn](https://www.linkedin.com/in/faisalkhatri/)
 
-## :thought_balloon: Checkout the blogs related to Testing on [my website](https://mfaisalkhatri.github.io/) and [medium](https://medium.com/@iamfaisalkhatri)
+## :thought_balloon: Checkout the blogs related to Software Testing and Test Automation on [my website](https://mfaisalkhatri.github.io/) and [Medium blog](https://medium.com/@iamfaisalkhatri)
